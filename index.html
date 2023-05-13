@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Character Counter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Character Counter</h1>
+            <h2>by Shantai Green</h2>
+        </header>
+        <main>
+            <section class="character-counter">
+                <textarea id="textarea" placeholder="This is where I count my characters..." onkeyup="countCharacters();"></textarea>
+                <p class="result">
+                    <span id="counter">0</span> Characters
+                </p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Shantai Green</p>
+        </footer>
+        <script type="text/javascript">
+            // set global constants
+            
+            const textarea = document.querySelector("textarea");
+            const counter = document.querySelector("#counter");
+
+            // write function to count the characters
+            function countCharacters() {
+                const text = textarea.value;
+                const textLength = textarea.value.length;
+                counter.innerText = `${textLength}`;
+            }
+        </script>
+    </body>
+</html>
