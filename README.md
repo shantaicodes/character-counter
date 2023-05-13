@@ -7,3 +7,10 @@
 <p>Here it is.</p>
 <p>My Character Counter.</p>
 <p>a character counter for your character-counting needs.</p>
+
+<h2>What languages I used</h2>
+<ul>
+  <li>HTML5</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
